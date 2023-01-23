@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ros_phone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://kit.fontawesome.com/afab87ce15.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <img src="funda.png" id="imagen-phone">
+    <div id="container-phone">
+        <button id="boton-inicio"></button>
+        <div id="hora">22:22</div>
+        <div id="estado"><i class="fa-solid fa-battery-three-quarters"></i></div>
+        <div id="apps">
+            <button id="call"><i class="fa-solid fa-phone"></i></button>
+            <button id="messages"><i class="fa-solid fa-message"></i></button>
+            <button id="contacts"><i class="fa-solid fa-user"></i></button>
+        </div>
+
+        <div id="call-container">
+            <div id="call-options">
+                <button id="call-todas" class="activa">Todas</button>
+                <button id="call-perdidas">Perdidas</button>
+            </div>
+            <div id="header">
+                <div id="header-title"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;Teléfono</div>
+            </div>
+        </div>
+
+        <div id="messages-container">
+            <div id="messages-groups">
+                <div id="messages-groups-title">GRUPOS</div>    
+            </div>
+
+            <div id="messages-table"></div>
+
+            <div id="header">
+                <div id="header-title"><i class="fa-solid fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;&nbsp;Mensajes</div>
+            </div>
+            <div id="chat-container">
+                <div id="chat-header">
+                    <div id="chat-header-title">Contacto</div>
+                </div>
+                <div id="chat-input-div">
+                    <input type="text" placeholder="Mensaje" id="chat-input" minlength="1">
+                    <button id="chat-send"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+                <div id="chat-table"></div>
+            </div>
+        </div>
+
+        <div id="contacts-container">
+            <div id="contacts-table"></div>
+
+            <div id="contacts-header">
+                <div id="header-title-contacts"><i class="fa-solid fa-address-book"></i>&nbsp;&nbsp;&nbsp;Contactos</div>
+                <div id="contacts-personal">
+                    <div id="contacts-personal-ini">RG</div>
+                    <span id="personal-nombre">Rosses Garcia</span>
+                    <span id="personal-number">19491</span>
+                </div>
+            </div> 
+        </div>
+
+    </div>
+
+    <script src="base.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
